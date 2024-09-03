@@ -8,35 +8,39 @@ p {
 
 .hero {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     height: 100vh;
     background-color: #e3ffe5;
+    box-sizing: border-box;
 }
+
 
 .photo-container {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
     overflow: hidden;
     position: relative;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 .photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 
 .content {
-    flex: 3;
+    flex: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .greeting {
@@ -56,33 +60,46 @@ p {
     margin-bottom: 20px;
 }
 
-.languages {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.language {
-    display: flex;
-    align-items: center;
-}
-
-.icon {
-    width: 2em;
-    height: 2em;
-    margin-right: 10px;
-}
-
-.language-info {
-    text-align: left;
-}
-
-.level {
-    font-size: 0.9em;
-    color: #666;
+.about-me-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .about-me {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.media-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.media-item {
+    flex: 1;
+    padding: 10px;
+    max-width: 500px;
 }
