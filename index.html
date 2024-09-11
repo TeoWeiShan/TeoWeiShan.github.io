@@ -5,49 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wei Shan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="hero">
-        <div class="photo-container">
-            <img src="img/profile.jpg" alt="Wei Shan's photo" class="photo">
-        </div>
-        <div class="content">
-            <div class="greeting">Heya 👋</div>
-            <div class="name">I'm Wei Shan</div>
-            <div class="title">Sophomore Undergraduate @ SMU Information Systems</div>
-
-            <div class="about-me-box">
-                <div class="about-me">
-                    A driven and adaptable professional with a passion for innovation. Experienced in web development,
-                    data
-                    analysis, and collaborative problem-solving. Committed to delivering cutting-edge solutions through
-                    continuous learning and creative thinking. Thrives in fast-paced environments, bringing a unique
-                    blend
-                    of technical expertise and interpersonal skills to every project.
-                </div>
-            </div>
-
-            <div class="media-section">
-                <div class="media-item">
-                    <div class="title">Nanputuo Temple, Xiamen, China</div>
-                    <div class="aspect-ratio">
-                        <iframe id="travel-video" src="https://www.youtube.com/embed/C5iHMRrUeVE?autoplay=1&mute=1"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+    <div class="hero">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Teo Wei Shan</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#place">Place</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="media-item">
-                    <div class="greeting">It is a beautiful and serene Buddhist temple with a rich history. The temple's
-                        stunning architecture, intricate carvings, and lush gardens create a peaceful atmosphere that
-                        feels like an escape from the hustle and bustle of everyday life.</div>
+            </nav>
+        </div>
+        <div class="container text-center p-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="photo-container">
+                        <img src="img/profile.jpg" alt="Wei Shan's photo" class="img-fluid rounded photo">
+                    </div>
+                </div>
+                <div class="col-md-8 py-4">
+                    <div class="greeting fs-1">Heya 👋</div>
+                    <div class="name fw-bold fs-3">I'm Wei Shan</div>
+                    <div class="title fs-5 text-muted">Sophomore Undergraduate @ SMU Information Systems</div>
+                    <div class="about-me-box my-4">
+                        <div class="about-me fs-6">
+                            A driven and adaptable professional with a passion for innovation. Experienced in web
+                            development, data analysis, and collaborative problem-solving. Committed to delivering
+                            cutting-edge solutions through continuous learning and creative thinking. Thrives in
+                            fast-paced environments, bringing a unique blend of technical expertise and interpersonal
+                            skills to every project.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media-section mt-5">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="media-item">
+                            <div class="title h5" id="place">Nanputuo Temple, Xiamen, China</div>
+                            <div class="greeting text-muted fs-6 py-4">
+                                It is a beautiful and serene Buddhist temple with a rich history. The temple's stunning
+                                architecture, intricate carvings, and lush gardens create a peaceful atmosphere that
+                                feels like an escape from the hustle and bustle of everyday life.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media-item">
+                            <div class="aspect-ratio ratio ratio-16x9">
+                                <iframe id="travel-video"
+                                    src="https://www.youtube.com/embed/C5iHMRrUeVE?autoplay=1&mute=1" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                                    picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
