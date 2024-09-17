@@ -1,105 +1,32 @@
-body,
-h1,
-p {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    background-color: #e3ffe5;
-    box-sizing: border-box;
-}
-
-
-.photo-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    max-width: 300px;
-    width: 100%;
-    height: 100%;
-}
-
-.photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.greeting {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.name {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.title {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.about-me-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.about-me {
-    font-size: 1.2em;
-    color: #333;
-    text-align: center;
-}
-
-.aspect-ratio {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%;
-}
-
-.aspect-ratio iframe {
-    position: absolute;
-    top: 0;
+.popup {
+    position: fixed;
+    z-index: 1;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    border: 0;
+    overflow: auto;
+    background-color: rgba(0,
+            0,
+            0,
+            0.4);
+    display: none;
 }
 
-.media-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
+.popup-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 30%;
+    font-weight: bolder;
 }
 
-.media-item {
-    flex: 1;
-    padding: 10px;
-    max-width: 500px;
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+}
+
+.show {
+    display: block;
 }
